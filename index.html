@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
          <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-		<title> Barcoode </title>
+        <script type="text/javascript" src="scan.js"></script>
+        <title> Barcoode </title>
 	</head>
 	
 	
@@ -83,7 +84,6 @@
             canvas.drawing, canvas.drawingBuffer {position: absolute; left: 0; top: 0;}
         </style>
         <script type="text/javascript">
-        const Quagga = require('quagga').default; // Common JS (important: default)
         $(function() {
             // Create the QuaggaJS config object for the live stream
             var liveStreamConfig = {
