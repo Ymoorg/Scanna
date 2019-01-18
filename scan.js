@@ -1,1 +1,1 @@
-const Quagga = require('quagga').default; // Common JS (important: default)
+import Quagga from 'quagga'; // Common JS (important: default)
