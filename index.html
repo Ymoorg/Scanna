@@ -5,13 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
          <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <script type="text/javascript" src="scan.js"></script>
+                <script type="text/javascript" src="scan.js"></script>
         <title> Barcoode </title>
 	</head>
-	
-	
-	
-	<body>
+    <body>
 		<div id="sitewrapper"> <!-- Så kan göra anrop från css -->
 			
 		
@@ -59,8 +56,29 @@
                     </div><!-- /.modal-dialog -->
                 </div><!-- /.modal -->
                 <!-- Slut fomrulär och css-->
+            
+                <!-- Variant 2-->
+                <section id="container" class="container">
+                        <h3>Scan various barcodes continously</h3>
 
-                
+                        <div class="controls">
+                            <button type="button" class="icon-barcode button scan">Start Scanning</button>
+                            <div class="readers">
+                                <label>
+                                    <span>EAN-13</span>
+                                    <input type="checkbox" checked="" name="ean_reader">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="overlay overlay--inline">
+                            <div class="overlay__content">
+                                <div class="overlay__close">X</div>
+                                <ul class="results"></ul>
+                            <video autoplay="true" preload="auto" src=""></video></div>
+                        </div>
+                </section>
+                <script src="index.js" type="text/javascript"></script>
+                <!-- Variant 2-->
 
 			</div>
 			
