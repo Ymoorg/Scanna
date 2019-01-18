@@ -83,6 +83,7 @@
             canvas.drawing, canvas.drawingBuffer {position: absolute; left: 0; top: 0;}
         </style>
         <script type="text/javascript">
+        const Quagga = require('quagga').default; // Common JS (important: default)
         $(function() {
             // Create the QuaggaJS config object for the live stream
             var liveStreamConfig = {
