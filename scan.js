@@ -1,5 +1,5 @@
 var Quagga;
-import Quagga from'quagga';
+import Quagga from 'node_modules\quagga\lib\quagga';
 
 $(function() {
     // Create the QuaggaJS config object for the live stream
