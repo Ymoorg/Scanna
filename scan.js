@@ -1,3 +1,4 @@
+const Quagga = require('quagga').default;
 $(function() {
     // Create the QuaggaJS config object for the live stream
     var liveStreamConfig = {
