@@ -1,6 +1,6 @@
-import createConnection from 'node_modules\mysql\index.js';
+import mysql from 'node_modules\mysql\index.js';
 
-var con = createConnection({
+var con = mysql.createConnection({
   host: "localhost",
   user: "mysqluser",
   password: "mysqlpassword",
