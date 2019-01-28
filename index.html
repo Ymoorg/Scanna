@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
          <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <script type="text/javascript" src="js/quagga.min.js"></script>        
+        <script type="text/javascript" src="js/quagga.min.js"></script>
+        <script type="text/javascript" src="js\Db_testdb.js"></script>        
         
         <link rel="stylesheet" href="css\quaggaexample.css" >
 
@@ -20,17 +21,19 @@
 			</header>
 		
 			<div id="sitecontent"> <!--  Så kan göra anrop från css -->
-				<h1> Scanna </h1>
+				<h1>  </h1>
                 <div class="input-group2">
-                    <input id="search_input" class="form-control" placeholder="Sök kund eller avtal" type="text" /> 
-                    
-                    <span class="input-group-btn"> 
-                        <button class="btn btn-default" type="button" data-toggle="modal" data-target="#db_connect">
-                            <i class="db_search">Sök</i>
-                        </button> 
-                    </span>
+                    <form action='index.html' method='post' name='frmSearch' id='frmSearch' onsubmit='return (this)'>
+                        <input id="search_input" class="form-control" placeholder="Sök kund eller avtal" type="text" /> 
+                        
+                        <span class="input-group-btn"> 
+                            <button class="btn btn-default" type="submit">
+                                <i class="db_search">Sök</i>
+                            </button> 
+                        </span>
+                    </form>
                 </div><!-- /input-group -->
-
+                <span id='msg1'></span> <!-- Test av innerhtml-->
                 <!-- Formulär och Css-->
                 <div class="row">
                     <div class="col-lg-6">
