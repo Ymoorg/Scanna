@@ -1,4 +1,4 @@
-import { createConnection } from 'node_modules\mysql\index.js';
+import createConnection from 'node_modules\mysql\index.js';
 
 var con = createConnection({
   host: "localhost",
