@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+#sitewrapper{
+    align-content: center;
+}
+
+
 .collapsable-source pre {
     font-size: small;
 }
