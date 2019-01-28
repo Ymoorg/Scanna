@@ -1,4 +1,4 @@
-import mysql from 'node_modules\mysql\index.js';
+var mysql = require('mysql');
 
 var con = mysql.createConnection({
   host: "localhost",
@@ -8,10 +8,11 @@ var con = mysql.createConnection({
 });
 
 function searchresult(theForm, con){
-    var searchresult = theForm.search_input.value
+    var searchresult = theForm.search_input.value;
     var sql = 'SELECT `*` FROM `kontraktsnr` WHERE `idkontraktsnr` LIKE `"%"?"%" or `kundnamn` LIKE `"%"?"%"';
     con.query(sql, [searchresult, searchresult], function (err, result) {
     if (err) throw err;
-    document.getElementById(msg1).innerHTML=result;
+    //document.getElementById(msg1).innerHTML=result;
+    console.log(result);
     });
 };
