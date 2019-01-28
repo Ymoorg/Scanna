@@ -1,4 +1,3 @@
-import { createConnection } from 'mysql';
 
 var con = createConnection({
   host: "localhost",
