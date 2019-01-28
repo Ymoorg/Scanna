@@ -1,6 +1,6 @@
-var mysql = require('mysql');
+import { createConnection } from 'mysql';
 
-var con = mysql.createConnection({
+var con = createConnection({
   host: "localhost",
   user: "mysqluser",
   password: "mysqlpassword",
