@@ -1,5 +1,6 @@
+import mysql from 'mysql'
 
-var con = createConnection({
+var con = mysql.createConnection({
   host: "localhost",
   user: "mysqluser",
   password: "mysqlpassword",
