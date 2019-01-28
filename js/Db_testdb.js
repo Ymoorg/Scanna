@@ -1,5 +1,3 @@
-import mysql from 'mysql'
-
 var con = mysql.createConnection({
   host: "localhost",
   user: "mysqluser",
@@ -8,7 +6,7 @@ var con = mysql.createConnection({
 });
 
 function searchresult(theForm, con){
-    var searchresult = theFrom.search_input.value
+    var searchresult = theForm.search_input.value
     var sql = 'SELECT `*` FROM `kontraktsnr` WHERE `idkontraktsnr` LIKE `"%"?"%" or `kundnamn` LIKE `"%"?"%"';
     con.query(sql, [searchresult, searchresult], function (err, result) {
     if (err) throw err;
