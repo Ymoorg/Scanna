@@ -19,6 +19,7 @@
   "homepage": "",
   "dependencies": {
     "bootstrap": "^4.2.1",
+    "express": "^4.16.4",
     "jquery": "^3.3.1",
     "mysql": "^2.16.0",
     "mysqljs": "0.0.2-security",
@@ -27,7 +28,7 @@
     "quagga": "^0.12.1"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
+    "grunt": "^1.0.3",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-execute": "^0.2.2"
   }
