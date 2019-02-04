@@ -1,3 +1,3 @@
 function processid(){
-  alert(1);
+  alert(document.getElementById('scanner_input').value);
 }
