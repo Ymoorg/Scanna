@@ -1,10 +1,8 @@
-function searchresult(theForm, con){
-    var searchresult1 = theForm.search_input.value;
-    var searchresult2 = theForm.search_input.value;
-    var sql = 'SELECT `*` FROM `kontraktsnr` WHERE `idkontraktsnr` LIKE `"%"?"%" or `kundnamn` LIKE `"%"?"%"';
-    con.query(sql, [searchresult1, searchresult2], function (err, result) {
-    if (err) throw err;
-    //document.getElementById(msg1).innerHTML=result;
-    console.log(result);
-    });
-};
+
+var request = require('request');
+request('https://reqres.in/api/users/3', 
+	function (error, response, body) {
+    	if (!error && response.statusCode == 200) {
+        	alert(body);
+     }
+});
